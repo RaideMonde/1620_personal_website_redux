@@ -14,7 +14,6 @@
 
 nav{
     font-size: 2rem;
-    background-color: #Edddd0;
     padding: 2px;
 }
 
@@ -25,13 +24,22 @@ nav{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+    border: black;
 }
 
 .grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
+    background-color: #e5e5dc;
+}
+
+nav.grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-content: space-around;
+    text-align: center;
     gap: 5px;
+    background-color: #Edddd0;
 }
 
 .item{
