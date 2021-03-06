@@ -5,45 +5,74 @@
     #DB504A
     #334259
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+
 *{
     margin: 0;
     padding : 0;
-    font-family: monospace;
+    font-family: 'lexend Mega', sans-serif;
     font-size: 1rem;
 }
 
+h1{
+    font-size: 3rem;
+}
+
 nav{
-    font-size: 2rem;
-    padding: 2px;
-}
-
-.container{
-    width: 100px;
-    height: 400px;
+    grid-row: 1;
+    grid-column: 1/3;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    border: black;
+    background-color: #6e8783;
+    text-align: center;
+    width: 100%;
 }
 
-.grid{
+nav a{
+    flex: auto;
+    justify-content: space-between;
+    padding: 4px;
+    color: black;
+    text-align: center;
+    background-color: #6e8783;
+}
+
+nav a:hover{
+    color:#edddd0;
+    background-color: #334259;
+}
+
+footer{
+    grid-row: 3;
+    grid-column: 1 / 3;
+    display: flex;
+    background-color: #6e8783;
+    flex-direction: column;
+}
+
+.wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 5fr;
+    grid-auto-rows: auto;
+}
+
+.aside{
+    background-color: #edddd0;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.content{
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     background-color: #e5e5dc;
 }
 
-nav.grid{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    justify-content: space-around;
-    text-align: center;
-    gap: 5px;
-    background-color: #Edddd0;
-}
 
-.item{
-    font-size: 2rem;
-    background-color: coral;
+#selfie{
+    height: 400px;
 }
 
