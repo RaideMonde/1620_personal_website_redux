@@ -75,3 +75,39 @@ footer{
     width: 400px;
 }
 
+@media screen and (max-width: 600px){
+    body{
+        background-color: #edddd0;
+    }
+    p{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+    h1{
+        background-color: #6e8783;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1919px){
+    body{
+        background-color: #6e8783;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    body{
+        background-color: #e5e5dc;
+    }
+    p{
+        font-size: .5rem;
+        color: #334259;
+    }
+    .content{
+        background-color: #edddd0;
+    }
+}
